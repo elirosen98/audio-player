@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Audio Player</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    .player {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+    }
+
+    audio {
+      display: block;
+      width: 100%;
+      min-height: 54px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="player">
+    <audio controls preload="metadata">
+      <source src="background.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+  </div>
+</body>
+</html>
